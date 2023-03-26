@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-family: "Varela Round", sans-serif;
+}
+
+.card {
+  width: 500px;
+}
+
+.card__header {
+  position: relative;
+  background: #333;
+  height: 2em;
+  padding: 1.5em;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  border-radius: 0.15em;
+}
+
+.card__header h4 {
+  text-align: center;
+}
+
+.card__header:after {
+  content: "";
+  position: absolute;
+  right: 50px;
+  bottom: -15px;
+  border-top: 15px solid #333;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-bottom: none;
+}
+
+.card__indicator {
+  border-bottom: 1px solid #727171;
+  height: 1.5em;
+}
+
+.card__indicator-bg {
+  background: #d64510;
+  height: 100%;
+  width: 75%;
+}
+
+.card__content {
+  border: 1px solid #727171;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.content {
+  padding: 2em;
+}
+
+.content p {
+  font-size: 1.5rem;
+  color: #727171;
+  margin-top: 1em;
+}
+
+.content__rem-days {
+  color: #d64510;
+  font-weight: 900;
+}
+
+.content__btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.content__btns button {
+  padding: 1em;
+  width: 45%;
+  font-size: 1.5rem;
+  font-weight: 900;
+  border-radius: 0.5em;
+}
+
+.amount {
+  border: 0.75px solid #727171;
+  background: transparent;
+  text-align: left;
+}
+
+.amount span {
+  color: #727171;
+}
+
+.give_now {
+  background: rgb(6, 211, 6);
+  color: #fff;
+  border: none;
+  font-family: "Varela Round", sans-serif;
+}
+
+.content > .why_give {
+  color: rgb(5, 184, 184);
+  font-style: italic;
+}
+
+.card__actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__actions button {
+  width: 45%;
+  font-size: 1.2rem;
+  font-weight: 900;
+  border-radius: 0.5em;
+  padding: 1em;
+  border: 0.75px solid #727171;
+  background: transparent;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+    padding: 1em;
+  }
+}
